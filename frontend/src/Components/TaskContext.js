@@ -18,7 +18,7 @@ export const TaskProvider = ({ children }) => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch("http://localhost:5000/get-tasks", {
+      const response = await fetch("https://taskify-zi22.onrender.com/get-tasks", {
         method: "GET",
         credentials: "include",
         headers: {
