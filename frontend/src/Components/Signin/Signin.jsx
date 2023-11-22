@@ -29,7 +29,7 @@ const Signin = () => {
       loginFormData.email = user.email;
       loginFormData.password =user.uid;
       
-      const response = await fetch("http://localhost:5000/signin-google", {
+      const response = await fetch("https://taskify-zi22.onrender.com/signin-google", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -66,7 +66,7 @@ const Signin = () => {
         password: password, // Replace this with a secure method for generating passwords
       };
   
-      const response = await fetch("http://localhost:5000/signin-google", {
+      const response = await fetch("https://taskify-zi22.onrender.com/signin-google", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -91,7 +91,7 @@ const Signin = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8000/signin", {
+      const response = await fetch("https://taskify-zi22.onrender.com/signin", {
         method: "POST",
         credentials: "include",
         headers: {
