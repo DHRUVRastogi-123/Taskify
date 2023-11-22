@@ -42,7 +42,7 @@ const Canvas = (props) => {
   const handleSaveCanvas = async () => {
     // code for saving the canvas to the mongoDB
     try {
-      const response = await fetch("http://localhost:5000/canvas", {
+      const response = await fetch("https://taskify-zi22.onrender.com/canvas", {
         method: "POST",
         credentials: "include",
         headers: {
