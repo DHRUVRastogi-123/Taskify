@@ -13,7 +13,7 @@ function AddNoteBar(props)
 {
   const fetchNotes = async () => {
       try {
-          const response = await fetch("http://localhost:5000/get-notes", {
+          const response = await fetch("https://backend-m8ft.onrender.com/get-notes", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -61,7 +61,7 @@ function AddNoteBar(props)
     }
     else
     {try {
-      const response = await fetch("http://localhost:5000/note", {
+      const response = await fetch("https://backend-m8ft.onrender.com/note", {
         method: "POST",
         credentials: "include",
         headers: {
