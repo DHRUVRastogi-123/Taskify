@@ -33,7 +33,7 @@ const Signup = () => {
       formData.name = user.displayName;
       formData.password =user.uid;
       
-      const response = await fetch("https://taskify-zi22.onrender.com/signup-google", {
+      const response = await fetch("https://backend-m8ft.onrender.com/signup-google", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -81,7 +81,7 @@ const Signup = () => {
         password: password, // Replace this with a secure method for generating passwords
       };
   
-      const response = await fetch("https://taskify-zi22.onrender.com/signup-google", {
+      const response = await fetch("https://backend-m8ft.onrender.com/signup-google", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -111,7 +111,7 @@ const Signup = () => {
     event.preventDefault();
 
     try {
-      const response = await fetch("https://taskify-zi22.onrender.com/signup", {
+      const response = await fetch("https://backend-m8ft.onrender.com/signup", {
         method: "POST",
         credentials: "include",
         headers: {
