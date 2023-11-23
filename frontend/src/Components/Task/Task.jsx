@@ -18,7 +18,7 @@ const Task = (props) => {
     setClicked(true);
     // Make an HTTP request to update the task's status
     try {
-      const response = await fetch("http://localhost:5000/update-task-status", {
+      const response = await fetch("https://backend-m8ft.onrender.com/update-task-status", {
         method: "PUT",
         credentials: "include",
         headers: {
