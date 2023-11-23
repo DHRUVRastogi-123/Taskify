@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "build": "npm install && npm run migrate && npm run build:assets",
+    "build:assets": "echo 'Run scripts to compile assets here'",
+    "migrate": "echo 'Run migration scripts here'",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
