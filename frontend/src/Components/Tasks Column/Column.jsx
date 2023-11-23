@@ -43,7 +43,7 @@ const Column = () => {
 
     try {
       setTasksAdded(true);
-      const response = await fetch("https://taskify-zi22.onrender.com/task", {
+      const response = await fetch("https://backend-m8ft.onrender.com/task", {
         method: "POST",
         credentials: "include",
         headers: {
