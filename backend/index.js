@@ -17,10 +17,10 @@ connectDb();
 
 // Middleware
 const corsOptions = {
-  origin: "https://taskify-quc6754r3-dhruv-rastogis-projects.vercel.app",
+  origin: "*",
   credentials: true, // Allow cookies and credentials
 };
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(
   session({
