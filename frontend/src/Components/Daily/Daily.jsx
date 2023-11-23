@@ -12,7 +12,7 @@ const Daily = (props) => {
 
   const handleDailyTaskDelete = async () => {
     try {
-      const response = await fetch("http://localhost:5000/delete-daily-task", {
+      const response = await fetch("https://backend-m8ft.onrender.com/delete-daily-task", {
         method: "DELETE",
         credentials: "include",
         headers: {
