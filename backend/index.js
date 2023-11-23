@@ -17,7 +17,7 @@ connectDb();
 
 // Middleware
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://taskify-khaki.vercel.app",
   credentials: true, // Allow cookies and credentials
 };
 app.use(cors(corsOptions));
